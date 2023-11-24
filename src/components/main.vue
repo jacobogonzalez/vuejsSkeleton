@@ -1,5 +1,7 @@
 
+<script setup lang="ts">
 
+</script>
 <template>
   <v-card>
     <v-layout>
@@ -17,7 +19,7 @@
         </v-list>
       </v-navigation-drawer>
 
-      <v-main>
+      <v-main class="mainContainer">
         <!-- The application works by routes, add your components to the index file in the router folder -->
         <router-view></router-view>
 
@@ -25,8 +27,10 @@
     </v-layout>
   </v-card>
 </template>
-<script setup lang="ts">
 
-</script>
 
-<style scoped></style>
+<style scoped>
+.mainContainer {
+  display: contents;
+}
+</style>

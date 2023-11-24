@@ -1,13 +1,13 @@
-<template>
-  <!-- inside main we add all our components. -->
-  <Main />
-</template>
-
 <script setup lang="ts">
 
 import Main from './components/main.vue';
 
 </script>
+<template>
+  <!-- inside main we add all our components. -->
+  <Main />
+</template>
+
 <style scoped>
 header {
   line-height: 1.5;
