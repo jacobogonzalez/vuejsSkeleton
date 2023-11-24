@@ -6,8 +6,7 @@ const show = false
 </script>
 <template>
   <v-card
-    class="mx-auto"
-    max-width="344"
+  max-width="280"
   >
     <v-img
       src="https://cdn.vuetifyjs.com/images/cards/sunshine.jpg"
