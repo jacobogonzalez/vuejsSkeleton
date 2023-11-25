@@ -1,13 +1,21 @@
 
 <script setup lang="ts">
 import Header from './header/header.vue'
+import { useDisplay } from 'vuetify'
+
+const { mobile } = useDisplay()
+const drawer = true;
 </script>
 <template>
+  
   <v-card>
     <v-layout class="appBackground">
-      <v-navigation-drawer>
+      <v-navigation-drawer 
+      v-model="drawer"
+      location="bottom"
+      >
         <v-list>
-          <v-list-item prepend-avatar="https://randomuser.me/api/portraits/women/85.jpg" title="Sandra Adams"
+          <v-list-item prepend-avatar="" title="Sandra Adams"
             subtitle="sandra_a88@gmailcom"></v-list-item>
         </v-list>
 
@@ -22,6 +30,7 @@ import Header from './header/header.vue'
 
       <v-main class="mainContainer">
         <!-- header component is global for all applications -->
+        
         <Header />
         <!-- The application works by routes, add your components to the index file in the router folder -->
         <router-view></router-view>

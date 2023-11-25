@@ -7,7 +7,7 @@ const show = false
 <template>
   <div class="mx-0 headerContainer">
 
-
+    <v-btn icon="mdi-open-in-new" size="large"></v-btn>
   </div>
 </template>
 
